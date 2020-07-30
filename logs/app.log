@@ -1,0 +1,47 @@
+OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-07-30 15:58:13.445  INFO 52545 --- [           main] com.example.demo.SareetaApplication      : Starting SareetaApplication on kelseys-comp-2.lan with PID 52545 (started by kelsey in /Users/kelsey/Spring Projects/Udacity JDND/eCommerce/JDND/projects/P04-eCommerce Application/starter_code)
+2020-07-30 15:58:13.452  INFO 52545 --- [           main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-07-30 15:58:15.183  INFO 52545 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-07-30 15:58:15.293  INFO 52545 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 4 repository interfaces.
+2020-07-30 15:58:16.463  INFO 52545 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2fe0e2f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-30 15:58:16.836  INFO 52545 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-30 15:58:16.875  INFO 52545 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-30 15:58:16.876  INFO 52545 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-07-30 15:58:17.073  INFO 52545 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-30 15:58:17.073  INFO 52545 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3496 ms
+2020-07-30 15:58:17.298  INFO 52545 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-30 15:58:17.468  INFO 52545 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-30 15:58:17.556  INFO 52545 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-07-30 15:58:17.672  INFO 52545 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-07-30 15:58:17.674  INFO 52545 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-07-30 15:58:17.921  INFO 52545 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-07-30 15:58:18.145  INFO 52545 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-30 15:58:19.485  INFO 52545 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-30 15:58:20.566  INFO 52545 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@663622b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@175bf9c9, org.springframework.security.web.header.HeaderWriterFilter@e18d2a2, org.springframework.web.filter.CorsFilter@1be52113, org.springframework.security.web.authentication.logout.LogoutFilter@2bf0c70d, com.example.demo.security.JWTAuthenticationFilter@5badeda0, com.example.demo.security.JWTAuthenticationVerificationFilter@56a9a7b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@306c9b2c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@287317df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dd247b, org.springframework.security.web.session.SessionManagementFilter@52d9f36b, org.springframework.security.web.access.ExceptionTranslationFilter@c6bf8d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@608eb42e]
+2020-07-30 15:58:20.806  INFO 52545 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-30 15:58:20.907  WARN 52545 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-30 15:58:21.349  INFO 52545 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-30 15:58:21.353  INFO 52545 --- [           main] com.example.demo.SareetaApplication      : Started SareetaApplication in 8.898 seconds (JVM running for 10.728)
+2020-07-30 15:58:27.881  INFO 52545 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-30 15:58:27.888  INFO 52545 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-30 15:58:27.904  INFO 52545 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-07-30 15:58:28.080  INFO 52545 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Creating user Kelsey
+2020-07-30 15:58:28.362  INFO 52545 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : User Kelsey created successfully
+2020-07-30 15:58:45.752  INFO 52545 --- [nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-07-30 15:59:10.039  INFO 52545 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : Adding modifications to cart for user Kelsey
+2020-07-30 15:59:10.097  INFO 52545 --- [nio-8080-exec-4] c.e.demo.controllers.CartController      : Modifications added to cart successfully for user Kelsey
+2020-07-30 15:59:20.239  INFO 52545 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-30 15:59:20.242  INFO 52545 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-30 15:59:20.249  INFO 52545 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-07-30 15:59:20.254  INFO 52545 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

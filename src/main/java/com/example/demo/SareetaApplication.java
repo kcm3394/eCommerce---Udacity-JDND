@@ -14,13 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class}) //set up using JWT instead
 public class SareetaApplication {
 
-	public static final Logger log = LoggerFactory.getLogger(SareetaApplication.class);
-
 	public static void main(String[] args) {
-
-		log.info("This is a test event");
-		log.error("This is a test error");
-
 		SpringApplication.run(SareetaApplication.class, args);
 	}
 

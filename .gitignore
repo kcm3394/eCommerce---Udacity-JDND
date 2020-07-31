@@ -12,5 +12,3 @@
 target/
 # .idea folder
 /.idea
-# .iml ignore
-*.iml

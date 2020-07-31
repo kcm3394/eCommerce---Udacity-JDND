@@ -19,11 +19,13 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private final UserDetailsServiceImpl userDetailsService;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final JWTAuthenticationEntryPoint jwtAuthenticationEntryPoint;
 
     public WebSecurityConfiguration(UserDetailsServiceImpl userDetailsService,
-                                    BCryptPasswordEncoder bCryptPasswordEncoder) {
+                                    BCryptPasswordEncoder bCryptPasswordEncoder, JWTAuthenticationEntryPoint jwtAuthenticationEntryPoint) {
         this.userDetailsService = userDetailsService;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+        this.jwtAuthenticationEntryPoint = jwtAuthenticationEntryPoint;
     }
 
     /**
@@ -40,7 +42,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
                 .addFilter(new JWTAuthenticationVerificationFilter(authenticationManager()))
                 //this disables session creation on Spring Security
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .httpBasic().authenticationEntryPoint(jwtAuthenticationEntryPoint);
     }
 
     /**
@@ -64,3 +68,4 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 }
 
 //https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
+//https://www.baeldung.com/spring-security-basic-authentication

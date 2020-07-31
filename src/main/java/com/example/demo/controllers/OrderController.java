@@ -4,11 +4,11 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.UserOrder;
 import com.example.demo.model.persistence.repositories.OrderRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.splunk.logging.*;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping("/api/order")
 public class OrderController {
 
-	public static final Logger log = LoggerFactory.getLogger(OrderController.class);
+	public static final Logger log = LoggerFactory.getLogger("splunkLogger");
 	
 	@Autowired
 	private UserRepository userRepository;

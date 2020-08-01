@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 import org.slf4j.*;
-import com.splunk.logging.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -22,7 +21,7 @@ import com.example.demo.model.requests.CreateUserRequest;
 @RequestMapping("/api/user")
 public class UserController {
 
-	public static final Logger log = LoggerFactory.getLogger("splunkLogger");
+	public static final Logger log = LoggerFactory.getLogger(UserController.class);
 	
 	@Autowired
 	private UserRepository userRepository;

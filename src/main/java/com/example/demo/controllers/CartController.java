@@ -4,7 +4,6 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 import org.slf4j.*;
-import com.splunk.logging.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +24,7 @@ import com.example.demo.model.requests.ModifyCartRequest;
 @RequestMapping("/api/cart")
 public class CartController {
 
-	public static final Logger log = LoggerFactory.getLogger("splunkLogger");
+	public static final Logger log = LoggerFactory.getLogger(CartController.class);
 
 	@Autowired
 	private UserRepository userRepository;

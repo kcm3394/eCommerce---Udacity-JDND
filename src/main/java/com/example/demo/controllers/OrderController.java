@@ -8,7 +8,6 @@ import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.splunk.logging.*;
 
 import java.util.List;
 
@@ -16,7 +15,7 @@ import java.util.List;
 @RequestMapping("/api/order")
 public class OrderController {
 
-	public static final Logger log = LoggerFactory.getLogger("splunkLogger");
+	public static final Logger log = LoggerFactory.getLogger(OrderController.class);
 	
 	@Autowired
 	private UserRepository userRepository;
